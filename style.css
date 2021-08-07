@@ -80,4 +80,9 @@ h1 {
     color: #FFF;
     padding: 10px;
     margin-top: 20px;
+    cursor: pointer;
+}
+.reset:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(2, 65, 66);
 }
