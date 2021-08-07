@@ -39,3 +39,11 @@ function reset() {
     renderSquare();
     renderInfo();
 };
+
+function renderSquare() {
+
+};
+
+function renderInfo() {
+
+};
