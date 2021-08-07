@@ -6,12 +6,10 @@ let square = {
 };
 
 let player = '';
-
 let warning = '';
-
 let playing = false;
 
-
+reset();
 
 // Events
 document.querySelector('.reset').addEventListener('click', reset);
@@ -41,7 +39,10 @@ function reset() {
 };
 
 function renderSquare() {
-
+    for(let i in square) {
+        let item = document.querySelector(`div[data-item=${i}]`);
+        item.innerHTML = square[i]
+    };
 };
 
 function renderInfo() {
