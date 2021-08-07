@@ -14,7 +14,7 @@ let playing = false;
 
 
 // Events
-
+document.querySelector('.reset').addEventListener('click', reset);
 
 
 // Functions
