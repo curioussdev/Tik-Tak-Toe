@@ -18,3 +18,13 @@ document.querySelector('.reset').addEventListener('click', reset);
 
 
 // Functions
+function reset() {
+    warning = '';
+
+    let random = Math.floor(Math.random() * 2);
+    if(random === 0) {
+        player = 'x';
+    } else {
+        player = '0';
+    };
+};
