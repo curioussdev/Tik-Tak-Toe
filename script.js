@@ -22,12 +22,15 @@ function reset() {
     warning = '';
 
     let random = Math.floor(Math.random() * 2);
+    // player = (random === 0) ? 'x' : 'o';
+    // ou    
     if(random === 0) {
         player = 'x';
     } else {
         player = '0';
     };
-    //ou
 
-    // player = (random === 0) ? 'x' : 'o';
+    for(let i in square) {
+        square[i] = '';
+    }
 };
