@@ -7,7 +7,7 @@ let quadro = {
 
 let vez = '';
 
-
+let warning = '';
 
 
 
