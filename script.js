@@ -5,6 +5,10 @@ let quadro = {
     c1: '', c2: '', c3: ''
 };
 
+let vez = '';
+
+
+
 
 
 // Eventos
