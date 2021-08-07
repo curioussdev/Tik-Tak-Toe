@@ -27,4 +27,7 @@ function reset() {
     } else {
         player = '0';
     };
+    //ou
+
+    // player = (random === 0) ? 'x' : 'o';
 };
