@@ -86,3 +86,11 @@ function checkGame(){
         playing = false;
     };
 };
+
+function checkWinnerFor(player){
+
+};
+
+function isFull(){
+
+};
