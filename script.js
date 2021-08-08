@@ -67,4 +67,5 @@ function switchPlayer() {
     } else {
         player = 'x';
     };
+    renderInfo();
 };
