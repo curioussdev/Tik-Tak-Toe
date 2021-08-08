@@ -99,7 +99,10 @@ function checkWinnerFor(player){
 
         'a1,b2,c3',
         'a3,b2,c1'
-    ]
+    ];
+    for(let possibItem in possib){
+        let pArray = possib[possibItem].split(',') // array para dar loop nas possib
+    }
 };
 
 function isFull(){
