@@ -23,6 +23,7 @@ function itemClick(event) {
     if(square[item] === '') {
         square[item] = player;
         renderSquare();
+        switchPlayer();
     }
 };
 
@@ -58,4 +59,12 @@ function renderSquare() {
 function renderInfo() {
     document.querySelector('.vez').innerHTML = player;
     document.querySelector('.resultado').innerHTML= warning;
+};
+
+function switchPlayer() {
+    if(player === 'x') {
+        player = 'o';
+    } else {
+        player = 'x';
+    };
 };
