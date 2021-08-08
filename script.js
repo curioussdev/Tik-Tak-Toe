@@ -36,7 +36,7 @@ function reset() {
     if(random === 0) {
         player = 'x';
     } else {
-        player = '0';
+        player = 'o';
     };
 
     for(let i in square) {
