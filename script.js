@@ -20,7 +20,10 @@ document.querySelectorAll('.item').forEach(item => {
 // Functions
 function itemClick(event) {
     let item = event.target.getAttribute('data-item');
-    console.log(item)
+    if(square[item] === '') {
+        square[item] = player;
+        
+    }
 };
 
 function reset() {
