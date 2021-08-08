@@ -1,8 +1,8 @@
 // Initial Data
 let square = {
-    a1: '', a2: '', a3: '',
+    a1: 'x', a2: '', a3: '',
     b1: '', b2: '', b3: '',
-    c1: '', c2: '', c3: ''
+    c1: '', c2: 'o', c3: ''
 };
 
 let player = '';
@@ -13,7 +13,7 @@ reset();
 
 // Events
 document.querySelector('.reset').addEventListener('click', reset);
-
+document.querySelector('div[data-item=a1]').addEventListener('click', itemClick);
 
 // Functions
 function reset() {
