@@ -22,7 +22,7 @@ function itemClick(event) {
     let item = event.target.getAttribute('data-item');
     if(square[item] === '') {
         square[item] = player;
-        
+        renderSquare();
     }
 };
 
