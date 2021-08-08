@@ -47,6 +47,9 @@ function reset() {
 
     renderSquare();
     renderInfo();
+
+
+    checkGame();
 };
 
 function renderSquare() {
@@ -68,4 +71,18 @@ function switchPlayer() {
         player = 'x';
     };
     renderInfo();
+};
+
+
+function checkGame(){
+    if(checkWinnerFor('x')) {
+        warning = 'O "x" venceu';
+        playing = false;
+    } else if(checkWinnerFor('o')) {
+        warning = 'O "o" venceu';
+        playing = false;
+    } else if(isFull()) {
+        warning = 'Deu empate';
+        playing = false;
+    };
 };
