@@ -102,9 +102,21 @@ function checkWinnerFor(player){
     ];
     for(let possibItem in possib){
         let pArray = possib[possibItem].split(',') // array para dar loop nas possib
+        let hasWon = pArray.every(option =>  square[option] === player);
+        if(hasWon) {
+            return true;
+        }
+    
     }
+    return false;
+    
 };
 
 function isFull(){
-
+    for(let i in square) {
+        if(square[i] === ''){
+            return false;
+        }
+    }
+    return true;
 };
