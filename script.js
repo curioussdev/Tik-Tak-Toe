@@ -19,7 +19,8 @@ document.querySelectorAll('.item').forEach(item => {
 
 // Functions
 function itemClick(event) {
-    console.log(event.target)
+    let item = event.target.getAttribute('data-item');
+    console.log(item)
 };
 
 function reset() {
