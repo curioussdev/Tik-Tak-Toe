@@ -18,8 +18,8 @@ document.querySelectorAll('.item').forEach(item => {
 });
 
 // Functions
-function itemClick() {
-
+function itemClick(event) {
+    console.log(event.target)
 };
 
 function reset() {
