@@ -1,8 +1,8 @@
 // Initial Data
 let square = {
-    a1: 'x', a2: '', a3: '',
+    a1: '', a2: '', a3: '',
     b1: '', b2: '', b3: '',
-    c1: '', c2: 'o', c3: ''
+    c1: '', c2: '', c3: ''
 };
 
 let player = '';
@@ -20,7 +20,7 @@ document.querySelectorAll('.item').forEach(item => {
 // Functions
 function itemClick(event) {
     let item = event.target.getAttribute('data-item');
-    if(square[item] === '') {
+    if(playing && square[item] === '') {
         square[item] = player;
         renderSquare();
         switchPlayer();
@@ -64,12 +64,9 @@ function renderInfo() {
     document.querySelector('.resultado').innerHTML= warning;
 };
 
+
 function switchPlayer() {
-    if(player === 'x') {
-        player = 'o';
-    } else {
-        player = 'x';
-    };
+    player = (player === 'x') ? 'o':'x';
     renderInfo();
 };
 
@@ -86,6 +83,7 @@ function checkGame(){
         playing = false;
     };
 };
+
 
 function checkWinnerFor(player){
     let possib = [ // let possibilidades
@@ -118,5 +116,5 @@ function isFull(){
             return false;
         }
     }
-    return true;
+    return true;    
 };
