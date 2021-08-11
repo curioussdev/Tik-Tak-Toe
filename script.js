@@ -23,7 +23,7 @@ function itemClick(event) {
     if(playing && square[item] === '') {
         square[item] = player;
         renderSquare();
-        switchPlayer();
+        togglePlayer();
     }
 };
 
@@ -65,7 +65,7 @@ function renderInfo() {
 };
 
 
-function switchPlayer() {
+function togglePlayer() {
     player = (player === 'x') ? 'o':'x';
     renderInfo();
 };
